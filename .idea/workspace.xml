@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e095ad24-333c-437f-9049-4387ae83104c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/M3-Threading/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/M3-Threading/src/main/java/KronometerThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/M3-Threading/src/main/java/Main.java" afterDir="false" />
+    <list default="true" id="e095ad24-333c-437f-9049-4387ae83104c" name="Changes" comment="Threads and File Ops done">
+      <change afterPath="$PROJECT_DIR$/M4-JBDC/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/M4-JBDC/src/main/java/DbHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/M4-JBDC/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/M1-InnerClasses/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/M1-InnerClasses/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/M1-InnerClasses/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/M1-InnerClasses/src/main/java/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/M1-InnerClasses/src/main/java/DataBaseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/M1-InnerClasses/src/main/java/DataBaseHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/M1-InnerClasses/src/main/java/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/M1-InnerClasses/src/main/java/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/M1-InnerClasses/src/main/java/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/M1-InnerClasses/src/main/java/ProductManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/M2-JavaFileOperations/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/M2-JavaFileOperations/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/M2-JavaFileOperations/src/main/java/students.txt" beforeDir="false" afterPath="$PROJECT_DIR$/M2-JavaFileOperations/src/main/java/students.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +30,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2JmiVVh8CffjoqM8AQnGtWRC7PW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -50,11 +51,14 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "openjdk-19 (2)",
+    "jdk.selected.JAVA_MODULE": "openjdk-19",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -62,8 +66,41 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ],
+    "RunConfigurationTargetLRU": [
+      "fe342a8a-d3bb-4fd0-8545-978f2944f25f"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="console.sql" type="DatabaseScript" editBeforeRun="true" singleton="false" nameIsGenerated="true">
+      <script-file value="$APPLICATION_CONFIG_DIR$/consoles/db/fe342a8a-d3bb-4fd0-8545-978f2944f25f/console.sql" />
+      <script-mode>FILE</script-mode>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="CoreJavaOtherTopics" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="CoreJavaOtherTopics" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -72,8 +109,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672689682940</updated>
-      <workItem from="1672689684163" duration="4400000" />
+      <workItem from="1672689684163" duration="5475000" />
+      <workItem from="1672781537755" duration="7500000" />
     </task>
+    <task id="LOCAL-00001" summary="Threads and File Ops done">
+      <created>1672694547477</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672694547477</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,5 +138,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Threads and File Ops done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Threads and File Ops done" />
   </component>
 </project>

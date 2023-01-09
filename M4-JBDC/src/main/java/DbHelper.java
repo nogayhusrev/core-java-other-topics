@@ -8,7 +8,7 @@ public class DbHelper {
 
     private String userName = "root";
     private String password = "tatarsaid2326";
-    private String dbUrl = "jdbc:mysql://localhost:3306/jdbc";
+    private String dbUrl = "jdbc:mysql://localhost:3306/husrev";
 
 
 
